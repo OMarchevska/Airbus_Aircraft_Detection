@@ -16,18 +16,18 @@ The data preparation process is consistent across all notebooks, with variations
 
 ## Results
 
-Both models were trained on the same data and tested on two unlabeled full-size images. Below is a comparison of their performance:
+Both models were trained on the same data and tested on 6 full-size images that were labeled manually using Roboflow. Below is a comparison of trained models performance:
 
 - **RetinaNet**:
   - Pros: High confidence in predictions.
   - Cons: Slower inference speed.
   - Metrics:
     - mAP: 0.6686
-    - mAP@[IoU=50]: 0.9445
+    - mAP50: 0.9445
 
 - **YOLOv8s**:
   - Pros: Lightning-fast predictions.
   - Cons: Slightly lower confidence in predictions.
-  - Metrics:
-    - mAP: 0.75985
-    - mAP@[IoU=50]: 0.987
+  - Metrics (validation/testing):
+    - mAP50-95: 0.76 / 0.72
+    - mAP50: 0.987 / 0.995 
