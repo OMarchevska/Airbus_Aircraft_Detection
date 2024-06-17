@@ -16,12 +16,12 @@ The data preparation process is consistent across all notebooks, with variations
 
 ## Results
 
-Both models were trained on the same data and tested on 6 full-size images that were labeled manually using Roboflow. Below is a comparison of trained models performance:
+Both models were trained and validated on the same data, but YOLO model was additionally tested on 6 full-size images that were labeled manually using Roboflow. Below is a comparison of trained models performance:
 
 - **RetinaNet**:
   - Pros: High confidence in predictions.
   - Cons: Slower inference speed.
-  - Metrics:
+  - Metrics (validation):
     - mAP: 0.6686
     - mAP50: 0.9445
 
